@@ -13,6 +13,7 @@ class PDOMock extends \PDO
 
     public function __construct()
     {
+        parent::__construct('sqlite::memory:');
     }
 
     public function getAttribute($attribute)
